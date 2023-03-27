@@ -14,7 +14,7 @@ Please perform the following instructions to run this project:
    - ```java -jar target/kafka-consumer-0.0.1-SNAPSHOT.jar```
 5. Go to the kafka-producer module and run the jar file under the target file.
    - ```java -jar target/kafka-producer-0.0.1-SNAPSHOT.jar```
-6. Send a request to the products rest service. products/{skipt}/{limit}
+6. Send a request to the products rest service. products/{skip}/{limit}
 ```
 curl -X GET http://localhost:6000/api/products/0/1
 curl -X GET http://localhost:6000/api/products/0/4340
