@@ -1,0 +1,96 @@
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+Content-Length: 41
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "message": "Semih Kırdinli message1" }
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+Content-Length: 32
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "message": "Semih Kırdinli"
+}
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+Content-Length: 32
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "message": "Semih Kırdinli" }
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+Content-Length: 32
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{ "message": "Semih Kırdinli" }
+
+<> 2023-03-27T015335.500.json
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+{ "message": "abc"}
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-03-27T011046.400.html
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+{message: "abc"}
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-03-27T010932.400.html
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Type: application/json
+Body: {message: "abc"}
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-03-27T010923.400.json
+
+###
+
+POST http://localhost:6000/api/producer/send
+Content-Length: 16
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{message: "abc"}
+
+<> 2023-03-27T010729.415.json
+
+###
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test-db@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.48">
+    <root id="1">
+      <ServerVersion>4.0.28</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="test-db">
+      <Current>1</Current>
+    </schema>
+    <table id="3" parent="2" name="batch-object"/>
+    <column id="4" parent="3" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="5" parent="3" name="_class">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="6" parent="3" name="message">
+      <DasType>String|12s</DasType>
+      <Position>3</Position>
+    </column>
+  </database-model>
+</dataSource>

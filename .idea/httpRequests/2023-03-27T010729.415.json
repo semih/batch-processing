@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-03-26T22:07:29.055+00:00",
+  "status": 415,
+  "error": "Unsupported Media Type",
+  "path": "/api/producer/send"
+}
