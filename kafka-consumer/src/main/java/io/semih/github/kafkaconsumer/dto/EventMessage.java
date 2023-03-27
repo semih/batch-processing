@@ -1,4 +1,4 @@
-package io.semih.github.kafkareader.dto;
+package io.semih.github.kafkaconsumer.dto;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 

@@ -1,6 +1,6 @@
-package com.example.kafkaproducer.service;
+package io.semih.github.kafkaproducer.service;
 
-import com.example.kafkaproducer.model.Message;
+import io.semih.github.kafkaproducer.dto.EventMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -13,10 +13,10 @@ public class MessageService {
     @Value("${event.kafka.topic.name}")
     private String topicName;
 
-    private final KafkaTemplate<String, Message> kafkaTemplate;
+    private final KafkaTemplate<String, EventMessage> kafkaTemplate;
 
-    public void produce(Message message) {
-        kafkaTemplate.send(topicName, message);
+    public void produce(EventMessage eventMessage) {
+        kafkaTemplate.send(topicName, eventMessage);
     }
 
 }

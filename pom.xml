@@ -21,7 +21,8 @@
   </properties>
 
   <modules>
-    <module>kafka-reader</module>
+    <module>kafka-consumer</module>
+    <module>kafka-producer</module>
   </modules>
 
 </project>

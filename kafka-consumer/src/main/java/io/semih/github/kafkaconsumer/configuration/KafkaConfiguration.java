@@ -1,6 +1,6 @@
-package io.semih.github.kafkareader.configuration;
+package io.semih.github.kafkaconsumer.configuration;
 
-import io.semih.github.kafkareader.dto.EventMessage;
+import io.semih.github.kafkaconsumer.dto.EventMessage;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;

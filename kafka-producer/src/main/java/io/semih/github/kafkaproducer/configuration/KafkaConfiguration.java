@@ -1,6 +1,6 @@
-package com.example.kafkaproducer.configuration;
+package io.semih.github.kafkaproducer.configuration;
 
-import com.example.kafkaproducer.model.Message;
+import io.semih.github.kafkaproducer.dto.EventMessage;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
@@ -20,16 +20,17 @@ public class KafkaConfiguration {
     private String bootstrapServers;
 
     @Bean
-    public KafkaTemplate<String, Message> kafkaTemplate() {
+    public KafkaTemplate<String, EventMessage> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 
     @Bean
-    public ProducerFactory<String, Message> producerFactory() {
+    public ProducerFactory<String, EventMessage> producerFactory() {
         var producerConfig = new HashMap<String, Object>();
         producerConfig.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         producerConfig.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         producerConfig.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
         return new DefaultKafkaProducerFactory<>(producerConfig);
     }
+
 }

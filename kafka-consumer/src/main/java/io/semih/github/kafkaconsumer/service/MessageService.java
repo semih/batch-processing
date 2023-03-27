@@ -1,11 +1,11 @@
-package io.semih.github.kafkareader.service;
+package io.semih.github.kafkaconsumer.service;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import io.semih.github.kafkareader.dto.EventMessage;
+import io.semih.github.kafkaconsumer.dto.EventMessage;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mongodb.core.MongoTemplate;

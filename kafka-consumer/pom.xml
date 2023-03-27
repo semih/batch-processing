@@ -13,8 +13,8 @@
     <artifactId>kafka-consumer</artifactId>
     <packaging>jar</packaging>
 
-    <name>kafka-reader</name>
-    <description>kafka-reader</description>
+    <name>kafka-consumer</name>
+    <description>kafka-consumer</description>
 
     <properties>
         <java.version>17</java.version>

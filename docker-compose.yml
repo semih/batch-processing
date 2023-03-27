@@ -47,9 +47,10 @@ services:
       - 9090:9000
     environment:
       KAFKA_BROKERCONNECT: kafka:19092
-  postgres:
-    container_name: postgres-kafka-reader
-    image: postgres:14.3-alpine
+  mongoDB:
+    container_name: mongodb-batch-objects
+    image: arm64v8/mongo:4.0
+    platform: linux/arm64/v8
     restart: always
     deploy:
       resources:
@@ -60,12 +61,10 @@ services:
           cpus: '0.5'
           memory: 1024M
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      PGDATA: /var/lib/postgresql/data/kafka-reader
+      MONGO_INITDB_DATABASE: test-db
     volumes:
-      - kafka-reader:/var/lib/postgresql/kafka-reader
+      - batch-objects:/var/lib/mongo/batch-objects
     ports:
-      - 5436:5432
+      - "27018:27017"
 volumes:
-  kafka-reader:
+  batch-objects:
